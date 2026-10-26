@@ -14,7 +14,9 @@
         </section>
         <section class="track-card track-result" id="trackResult" [class.is-visible]="trackResult()">
             <div class="track-result-header">
-                <div class="track-id" id="trackIdValue"></div>
+                <div class="track-id" id="trackIdValue">
+                    Номер посылки: {{ trackResult()?.id ?? trackNumber }}
+                </div>
                 <div class="track-routes">
                     <div class="track-route">
                         <div class="track-route-pin">
