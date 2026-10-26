@@ -1,6 +1,6 @@
 <div id="map"></div>
 <app-header />
-<aside class="main" id="siderbar">
+<aside class="main" id="sidebar">
     <div class="main-header">
         <div class="main-title">Оформление доставки</div>
         <div class="main-text">Выберите параметры для расчета отправления</div>
@@ -13,7 +13,7 @@
                     <div class="main-pin"></div>
                     <input id="from" formControlName="from" [attr.disabled]="orderId()"
                         placeholder="Откуда: начните вводить адрес" autocomplete="off" />
-                    <div class="main-ac" id="fromAC" role="listbox" aria-label="Подсказки адресов"></div>
+                    <div class="main-ac" id="fromAс" role="listbox" aria-label="Подсказки адресов"></div>
                 </div>
                 @if (this.routeForm.get('from')?.invalid && (this.routeForm.get('from')?.dirty ||
                 this.routeForm.get('from')?.touched)) {
@@ -24,7 +24,7 @@
                     <div class="main-pin"></div>
                     <input id="to" formControlName="to" [attr.disabled]="orderId()"
                         placeholder="Куда: начните вводить адрес" autocomplete="off" />
-                    <div class="main-ac" id="toAC" role="listbox" aria-label="Подсказки адресов"></div>
+                    <div class="main-ac" id="toAс" role="listbox" aria-label="Подсказки адресов"></div>
                 </div>
                 @if (this.routeForm.get('to')?.invalid && (this.routeForm.get('to')?.dirty ||
                 this.routeForm.get('to')?.touched)) {
